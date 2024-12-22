@@ -1,7 +1,33 @@
 const Banner = () => {
+  const services = [
+    {
+      id: 1,
+      image:
+        "https://res.cloudinary.com/duv5fiurz/image/upload/v1734873551/mgs-icon_f9kfne.png",
+      title: "Convenient online & In-clinic consultations",
+    },
+    {
+      id: 2,
+      image:
+        "https://res.cloudinary.com/duv5fiurz/image/upload/v1734873552/shild-icon_dxgbvg.png",
+      title: "Safe and effective treatment",
+    },
+    {
+      id: 3,
+      image:
+        "https://res.cloudinary.com/duv5fiurz/image/upload/v1734873551/doctor-icon_kr9zwk.png",
+      title: "Experienced Ayurvedic Practitioners",
+    },
+    {
+      id: 4,
+      image:
+        "https://res.cloudinary.com/duv5fiurz/image/upload/v1734873552/text-icon_wratws.png",
+      title: "Personalized Treatment Plans & Guidance",
+    },
+  ];
   return (
     <div className="relative pt-20 bg-yellow-50">
-      {/* Content Wrapper */}
+      {/* Banner content Wrapper */}
       <div className="relative flex h-[500px] md:h-[450px] lg:h-[600px]">
         {/* Overlay for large screens (left to right) */}
         <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-black via-black to-transparent lg:opacity-50 opacity-0 lg:z-10 z-0"></div>
@@ -50,6 +76,21 @@ const Banner = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/* banner service */}
+      <div className="pt-8 lg:py-8 text-green-800 font_dinpro_thin grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
+        {/* mapping the services */}
+        {services.map((service, idx) => (
+          <div
+            key={idx}
+            className="flex items-center gap-4 pb-6 px-6 lg:px-20 xl:px-0 border-b-2 lg:border-b-0 border-blue-50"
+          >
+            <div className="h-14 w-20 flex items-center justify-center rounded-full border border-green-800">
+              <img src={service.image} alt="msg-icon" className="h-10 w-10" />{" "}
+            </div>
+            <h3 className="text-lg">{service.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );
