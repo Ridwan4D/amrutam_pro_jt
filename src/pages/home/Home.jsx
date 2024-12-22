@@ -8,6 +8,8 @@ const Home = () => {
       <Banner />
       {/* Discover Ayurveda section */}
       <DiscoverAyurveda />
+
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 };
