@@ -6,9 +6,11 @@ const TitleWithPara = ({ heading, para }) => {
       <h1 className="text-3xl md:text-4xl xl:text-5xl base_text font_dinpro_bold lg:border-b-4 border-green-800/40 pb-0">
         {heading}
       </h1>
-      <p className="text-sm md:text-lg xl:text-xl font-thin max-w-2xl mx-auto text-stone-500">
-        {para}
-      </p>
+      {para && (
+        <p className="text-sm md:text-lg xl:text-xl font-thin max-w-2xl mx-auto text-stone-500">
+          {para}
+        </p>
+      )}
     </div>
   );
 };
