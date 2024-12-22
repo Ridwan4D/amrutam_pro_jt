@@ -1,5 +1,6 @@
 import TitleWithPara from "../SectinTitle/TitleWithPara";
 import LargeDiscoverAyurveda from "./Shared/LargeDiscoverAyurveda";
+import SMDiscoverAyurveda from "./Shared/SMDiscoverAyurveda";
 
 const DiscoverAyurveda = () => {
   const ayurvedaExercises = [
@@ -59,6 +60,9 @@ const DiscoverAyurveda = () => {
 
       {/* Section Content for large screen */}
       <LargeDiscoverAyurveda ayurvedaExercises={ayurvedaExercises} />
+
+      {/* Section Content for large screen */}
+      <SMDiscoverAyurveda ayurvedaExercises={ayurvedaExercises} />
     </div>
   );
 };
