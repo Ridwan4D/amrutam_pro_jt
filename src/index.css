@@ -10,3 +10,6 @@
 .font_dinpro_thin {
   font-family: 'DIN[T]', sans-serif;
 }
+.base_text,.base_bg{
+  color: #3A643B
+}
