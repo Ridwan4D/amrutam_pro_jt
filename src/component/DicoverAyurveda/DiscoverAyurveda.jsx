@@ -1,4 +1,4 @@
-import TitleWithPara from "../SectinTitle/TitleWithPara";
+import SectionTitle from "../SectinTitle/SectionTitle";
 import LargeDiscoverAyurveda from "./Shared/LargeDiscoverAyurveda";
 import SMDiscoverAyurveda from "./Shared/SMDiscoverAyurveda";
 
@@ -51,7 +51,7 @@ const DiscoverAyurveda = () => {
   return (
     <div className="py-10 px-6 max-w-7xl mx-auto">
       {/* Section Title */}
-      <TitleWithPara
+      <SectionTitle
         heading={"Discover Ayurveda’s Magic With Us"}
         para={
           "Ayurvedic treatment aims to balance your body and mind, bringing harmony and vitality. It's like a journey to better health using ancient wisdom, a totally effective approach for a better life."

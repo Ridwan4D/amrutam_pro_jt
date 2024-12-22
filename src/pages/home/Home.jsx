@@ -1,4 +1,5 @@
 import Banner from "../../component/Banner/Banner";
+import ConsultationsApart from "../../component/ConsultationsApart/ConsultationsApart";
 import DiscoverAyurveda from "../../component/DicoverAyurveda/DiscoverAyurveda";
 
 const Home = () => {
@@ -6,10 +7,22 @@ const Home = () => {
     <div>
       {/* banner section */}
       <Banner />
+
       {/* Discover Ayurveda section */}
       <DiscoverAyurveda />
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      {/* ConsultationsApart */}
+      <ConsultationsApart />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
