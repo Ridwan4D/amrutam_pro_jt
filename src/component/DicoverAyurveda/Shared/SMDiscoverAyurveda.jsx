@@ -4,7 +4,7 @@ const SMDiscoverAyurveda = ({ ayurvedaExercises }) => {
     <div className="lg:hidden">
       {/* top of the section */}
       <div
-        className="relative bg-contain bg-no-repeat bg-center h-72 rounded-full flex justify-center items-center"
+        className="relative bg-contain bg-no-repeat bg-center h-72 md:h-96 rounded-full flex justify-center items-center"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/duv5fiurz/image/upload/v1734884582/girl-bg_xixlgp.png')",
@@ -13,7 +13,7 @@ const SMDiscoverAyurveda = ({ ayurvedaExercises }) => {
         <img
           src="https://res.cloudinary.com/duv5fiurz/image/upload/v1734884582/girl_kqrxyh.png"
           alt="Girl Ayurveda"
-          className="w-56 h-auto"
+          className="w-56 md:w-72 h-auto"
         />
       </div>
 
