@@ -3,7 +3,7 @@ import PropType from "prop-types";
 const SectionTitle = ({ heading, para }) => {
   return (
     <div
-      className={`mt-5 xl:mt-20 mb-5 text-center space-y-4 ${
+      className={`mt-5 xl:mt-14 mb-5 text-center space-y-4 ${
         !para && "max-w-4xl xl:max-w-5xl"
       } max-w-2xl xl:max-w-3xl mx-auto px-6 md:px-0`}
     >

@@ -1,4 +1,4 @@
-import SectionTitle from "../SectinTitle/SectionTitle";
+import SectionTitle from "../SectionTitle/SectionTitle";
 import LargeDiscoverAyurveda from "./Shared/LargeDiscoverAyurveda";
 import SMDiscoverAyurveda from "./Shared/SMDiscoverAyurveda";
 

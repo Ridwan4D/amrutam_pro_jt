@@ -1,8 +1,8 @@
-import SectionTitle from "../SectinTitle/SectionTitle";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const ConsultationsApart = () => {
   return (
-    <div className="bg-yellow-50 py-10 md:py-14 lg:py-20">
+    <div className="bg-yellow-50 py-10 pb-24">
       {/* Section title */}
       <SectionTitle heading={"What sets Ayurvedic consultations apart?"} />
 
