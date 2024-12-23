@@ -44,7 +44,7 @@ const ApproachSection = () => {
         spaceBetween={30}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper mt-10"
         breakpoints={{
           1024: { slidesPerView: 4 },
           768: { slidesPerView: 2 },

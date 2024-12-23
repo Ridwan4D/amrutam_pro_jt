@@ -3,7 +3,7 @@ import Banner from "../../component/Banner/Banner";
 import BGBanner from "../../component/BGBanner/BGBanner";
 import ConsultationsApart from "../../component/ConsultationsApart/ConsultationsApart";
 import DiscoverAyurveda from "../../component/DicoverAyurveda/DiscoverAyurveda";
-// import StorySection from "../../component/StorySection/StorySection";
+import StorySection from "../../component/StorySection/StorySection";
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
       <ApproachSection />
 
       {/* story section */}
-      {/* <StorySection /> */}
+      <StorySection />
       <br />
       <br />
       <br />
