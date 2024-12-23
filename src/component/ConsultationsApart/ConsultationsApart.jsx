@@ -43,8 +43,8 @@ const ConsultationsApart = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-8 lg:gap-10 mt-5 lg:mt-10">
           {/* More Features and Images */}
-          <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row gap-5 md:gap-8 mt-5 md:mt-0">
-            <div className="space-y-4 base_text bg-white p-5 md:p-6 rounded-lg shadow-md border-t-4 border-green-800 h-full flex flex-col justify-between">
+          <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-8 mt-5 md:mt-0">
+            <div className="space-y-4 base_text bg-white p-5 md:p-6 rounded-lg shadow-md border-t-4 border-green-800 h-full flex flex-col justify-between flex-1">
               <h2 className="text-xl md:text-lg lg:text-xl xl:text-2xl font_dinpro_bold font-medium">
                 Zero side-effects
               </h2>
@@ -53,7 +53,7 @@ const ConsultationsApart = () => {
                 completely on natural herbs.
               </p>
             </div>
-            <div className="rounded-lg shadow-md border-t-4 border-green-800">
+            <div className="rounded-lg shadow-md border-t-4 border-green-800 flex-1">
               <img
                 src="https://res.cloudinary.com/duv5fiurz/image/upload/v1734894973/apart-image-2_lgbodp.png"
                 alt=""
