@@ -1,9 +1,11 @@
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import DoctorCard from "../DoctorCard/DoctorCard";
+import { FaAngleRight } from "react-icons/fa";
 
 const MeetExpert = () => {
   const doctorsReview = [
@@ -66,7 +68,7 @@ const MeetExpert = () => {
       <Swiper
         spaceBetween={30}
         pagination={{ clickable: true }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         className="mySwiper mt-10"
         breakpoints={{
           1440: { slidesPerView: 4 },
@@ -76,12 +78,18 @@ const MeetExpert = () => {
           0: { slidesPerView: 1 },
         }}
       >
-        {doctorsReview.map((review, idx) => (
+        {doctorsReview.slice(0, 4).map((review, idx) => (
           <SwiperSlide key={idx} className="flex justify-center items-center">
             <DoctorCard doctor={review} />
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <div className="flex justify-center mt-20">
+        <button className="btn px-8 flex items-center space-x-2 text-lg text-green-800 font-semibold bg-green-800/10 border border-green-800/60">
+          Find More Expert <FaAngleRight className="text-xl" />
+        </button>
+      </div>
     </div>
   );
 };
