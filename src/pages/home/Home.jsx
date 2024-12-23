@@ -1,4 +1,5 @@
 import ApproachSection from "../../component/ApproachSection/ApproachSection";
+import AppSection from "../../component/AppSection/AppSection";
 import Banner from "../../component/Banner/Banner";
 import BGBanner from "../../component/BGBanner/BGBanner";
 import ConsultationsApart from "../../component/ConsultationsApart/ConsultationsApart";
@@ -29,6 +30,9 @@ const Home = () => {
 
       {/*Meet Expert section */}
       <MeetExpert />
+
+      {/* app section */}
+      <AppSection />
       <br />
       <br />
       <br />
