@@ -85,7 +85,7 @@ const MeetExpert = () => {
         ))}
       </Swiper>
 
-      <div className="flex justify-center mt-20">
+      <div className="flex justify-center mt-7 lg:mt-14">
         <button className="btn px-8 flex items-center space-x-2 text-lg text-green-800 font-semibold bg-green-800/10 border border-green-800/60">
           Find More Expert <FaAngleRight className="text-xl" />
         </button>
