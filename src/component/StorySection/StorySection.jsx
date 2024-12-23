@@ -75,7 +75,7 @@ const StorySection = () => {
   ];
 
   return (
-    <div className="bg-yellow-50 mt-24 py-10 px-5 lg:px-10">
+    <div className="bg-yellow-50 mt-24 pt-10 pb-14 px-5 lg:px-10">
       <SectionTitle heading={"STORIES FROM OUR VALUED CUSTOMERS!"} />
 
       <Swiper

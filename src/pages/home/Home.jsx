@@ -3,6 +3,7 @@ import Banner from "../../component/Banner/Banner";
 import BGBanner from "../../component/BGBanner/BGBanner";
 import ConsultationsApart from "../../component/ConsultationsApart/ConsultationsApart";
 import DiscoverAyurveda from "../../component/DicoverAyurveda/DiscoverAyurveda";
+import MeetExpert from "../../component/MeetExpert/MeetExpert";
 import StorySection from "../../component/StorySection/StorySection";
 
 const Home = () => {
@@ -25,6 +26,9 @@ const Home = () => {
 
       {/* story section */}
       <StorySection />
+
+      {/*Meet Expert section */}
+      <MeetExpert />
       <br />
       <br />
       <br />
