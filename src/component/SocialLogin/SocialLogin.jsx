@@ -1,16 +1,13 @@
 import { GoogleAuthProvider } from "firebase/auth";
-import toast from "react-hot-toast";
-import { useLocation, useNavigate } from "react-router-dom";
-import useAxiosPublic from "../../Hooks/useAxiosPublic";
-import useAuth from "../../Hooks/useAuth";
+import { useLocation, useNavigate } from "react-router";
 import PropType from "prop-types";
+import useAuth from "../../Hooks/useAuth";
 
-const SocialLogin = ({ logProp }) => {
+const SocialLogin = () => {
   const { singUpWithApp } = useAuth();
   const googleProvider = new GoogleAuthProvider();
   const navigate = useNavigate();
   const location = useLocation();
-  const axiosPublic = useAxiosPublic();
 
   const handleSocialLogin = (provider) => {
     singUpWithApp(provider)
@@ -21,15 +18,8 @@ const SocialLogin = ({ logProp }) => {
           userImage: res.user?.photoURL,
           role: "user",
         };
-        axiosPublic.post("/users", userInfo).then(() => {
-          // console.log(result.data);
-          if (logProp) {
-            toast.success("Logged In");
-          } else {
-            toast.success("Account Created");
-          }
-          navigate(location?.state ? location.state : "/");
-        });
+        console.log(userInfo);
+        navigate(location?.state?.from ? location.state.from : "/");
       })
       .catch(() => {
         // Handle errors (if needed)
