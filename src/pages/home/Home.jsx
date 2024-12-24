@@ -4,6 +4,7 @@ import Banner from "../../component/Banner/Banner";
 import BGBanner from "../../component/BGBanner/BGBanner";
 import ConsultationsApart from "../../component/ConsultationsApart/ConsultationsApart";
 import DiscoverAyurveda from "../../component/DicoverAyurveda/DiscoverAyurveda";
+import Footer from "../../component/Footer/Footer";
 import MeetExpert from "../../component/MeetExpert/MeetExpert";
 import StorySection from "../../component/StorySection/StorySection";
 
@@ -33,6 +34,9 @@ const Home = () => {
 
       {/* app section */}
       <AppSection />
+
+      {/* footer */}
+      <Footer />
       <br />
       <br />
       <br />
