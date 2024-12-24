@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import DoctorCard from "../DoctorCard/DoctorCard";
 import { FaAngleRight } from "react-icons/fa";
+import { Link } from "react-router";
 
 const MeetExpert = () => {
   const doctorsReview = [
@@ -86,9 +87,12 @@ const MeetExpert = () => {
       </Swiper>
 
       <div className="flex justify-center mt-7 lg:mt-14">
-        <button className="btn px-8 flex items-center space-x-2 text-lg text-green-800 font-semibold bg-green-800/10 border border-green-800/60">
+        <Link
+          to={"/findDoctor"}
+          className="btn px-8 flex items-center space-x-2 text-lg text-green-800 font-semibold bg-green-800/10 border border-green-800/60"
+        >
           Find More Expert <FaAngleRight className="text-xl" />
-        </button>
+        </Link>
       </div>
     </div>
   );
