@@ -26,7 +26,7 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="relative pt-20 bg-yellow-50">
+    <div className="relative bg-yellow-50">
       {/* Banner content Wrapper */}
       <div className="relative flex h-[500px] md:h-[450px] lg:h-[600px]">
         {/* Overlay for large screens (left to right) */}
